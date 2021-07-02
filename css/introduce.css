@@ -1,0 +1,46 @@
+body{
+	padding: 0;
+	margin: 0 ;
+	font-family: 'Noto Sans SC', sans-serif;
+}
+/*內文*/
+main{
+	margin: 0 auto;
+	width: 100%;
+	min-height: 600px;
+	background-color: #1F2C3A;
+	color: white;
+	z-index: 1;
+	padding: 44px 0px;
+}
+article{
+	margin: 44px 0px 44px 0px;/*上右下左*/
+	flex-wrap: wrap;
+}
+article .cases{
+   	margin: 0 auto;
+   	width: 80%;
+   	display: flex;
+}
+article .photo{
+	margin: 0 auto;
+	width: 35%;
+	display: flex;
+	overflow: hidden;
+}
+article .photo img{
+	height: 100%;
+	width: 100%;
+}
+article .information{
+	margin: 0 auto;
+	width: 65%;
+}
+article .information #frame{
+ 	margin: 25px 40px;
+}
+article .information #frame .author a{
+  	color: white;
+  	text-decoration: none;
+  	list-style: none;
+}

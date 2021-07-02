@@ -1,0 +1,44 @@
+/*首頁底部*/
+.footer{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.footer-left{
+	width: 65%;
+    display: flex;
+}
+.im{
+    margin: 0 9%;
+    white-space: nowrap;
+}
+.im p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+.im a{
+    display: block;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 10px;
+    color: #808080;
+}
+.im a:hover{
+    color: #4682b4;
+}
+.footer-right{
+    width: 30%;
+    text-align: right;
+}
+.footer-right div p{
+    color: #4682b4;
+    font-size: 24px;
+    font-family: fantasy;
+    font-weight: bold;
+}
+.footer-right div span{
+    font-size: 13px;
+    color: #333333;
+}
