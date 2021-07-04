@@ -188,25 +188,48 @@ ul,li{
 /*聯絡內容*/
 article{
 	margin: 0 auto;
-	width: 80%;
+	width: 75%;
 	min-height: 300px;
 	z-index: 3;
 	position: static;
+	display: flex;
+	flex-wrap: wrap;
 }
-article .contact{
+article .contact1, article .contact2{
 	color: white;
-	/*padding-top: 44px;*/
+	width: 50%;
+	position: relative;
 }
-article .contact table{
+article .contact1 table, article .contact2 table{
 	color: white;
-	font-size: 32px;
-	margin: 0 auto;
+	font-size: 28px;
+	margin-top: 7%;/**/
+}
+article .contact1 table tr td, article .contact2 table tr td{
+	padding: 5px 10px;
+}
+article .contact2 #qrcode{
+	position: absolute;
+	margin-top: 6%;
 	text-align: center;
-	margin-top: 120px;/**/
+}
+article .contact2 #qrcode img{
+	width: 40%;
 }
 /*RWD*/
-@media screen and (max-width:650px) { 
-  	article .contact table{
-		font-size: 24px;
+@media screen and (max-width:650px) {
+	article .contact1, article .contact2{
+		width: 100%;
+	} 
+	article .contact2 #qrcode{
+		text-align: right;
+		margin-top: -49%;
+	}
+	article .contact2 #qrcode img{
+		width: 27%;
+	}
+  	article .contact1 table, article .contact2 table{
+		font-size: 22px;
+		margin-top: 3%;
 	}
 }

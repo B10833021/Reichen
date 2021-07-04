@@ -1,6 +1,7 @@
 /*首頁底部*/
 .footer{
     width: 80%;
+    min-height: 150px;
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
@@ -27,6 +28,12 @@
 }
 .im a:hover{
     color: #4682b4;
+}
+#footer-line{
+    margin-top: 5px;
+}
+#footer-line img{
+    width: 50%;
 }
 .footer-right{
     width: 33%;
