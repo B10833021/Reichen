@@ -1,0 +1,89 @@
+body{
+	padding: 0;
+	margin: 0 ;
+	font-family: 'Noto Sans SC', sans-serif;
+}
+/*內文*/
+main{
+	margin: 0 auto;
+	width: 100%;
+	min-height: 600px;
+	background-color: #1F2C3A;
+	color: white;
+	z-index: 1;
+	padding: 44px 0px;
+}
+article{
+	margin: 44px 0px 44px 0px;/*上右下左*/
+	flex-wrap: wrap;
+}
+/*項目*/
+article .cases{
+   	margin: 0 auto;
+   	width: 80%;
+   	display: flex;
+   	flex-wrap: wrap;
+}
+/*項目資訊*/
+article .information{
+	width: 100%;
+}
+article .information #frame .lable p{
+  	font-size: 23px;
+}
+article .information #frame .lable a{
+ 	color: white;
+  	text-decoration: none;
+  	list-style: none;
+}
+article .photos{
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+article .photos .img{
+	display: flex;
+}
+article .photos .img img{
+	width: 100%;
+}
+/*項目一、六的圖片排列*/
+article .photos .photo1,article .photos .photo6{
+	width: 33%;
+	display: flex;
+	flex-wrap: wrap;
+}
+/*項目二、五的圖片排列*/
+article .photos .photo2, article .photos .photo5{
+	width: 49%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+/*項目三、四的圖片排列*/
+article .photos .img-container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+article .photos .img-name {
+	margin: 0 auto;
+	display: flex;
+	white-space: nowrap;
+}
+/*RWD*/
+@media screen and (max-width:650px) { 
+  	article .cases{
+    	width: 80%;
+    }
+	article .photo{
+		width: 90%;
+	}
+	article .information{
+		width: 100%;
+	}
+}
