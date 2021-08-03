@@ -13,6 +13,39 @@ main{
 	z-index: 1;
 	padding: 44px 0px;
 }
+/*快捷鍵*/
+.case_title{
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.case_title .case_name{
+	width: 48%;
+	white-space: nowrap;
+	margin: 0.25%;
+	display: flex;
+	border-radius: 8px;
+	background-color: #33658a;
+}
+.case_title .case_name a{
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	white-space: nowrap;
+	margin: 0 auto;
+}
+.case_title .case_name a p{
+	font-size: 15px;
+	text-align: center;
+}
+.case_title .case_name a:hover{
+    filter: invert(90%) sepia(20%) saturate(389%) hue-rotate(169deg) brightness(100%) contrast(80%);
+    background: #e7ecef;
+    border-radius: 8px;
+    color: navy;
+}
 article{
 	margin: 44px 0px 44px 0px;/*上右下左*/
 	flex-wrap: wrap;
@@ -32,7 +65,7 @@ article .information #frame .lable p{
   	font-size: 23px;
 }
 article .information #frame .lable a{
- 	color: white;
+  	color: white;
   	text-decoration: none;
   	list-style: none;
 }
@@ -56,7 +89,7 @@ article .photos .photo1,article .photos .photo6{
 	display: flex;
 	flex-wrap: wrap;
 }
-/*項目二、五的圖片排列*/
+/*項目二的圖片排列*/
 article .photos .photo2, article .photos .photo5{
 	width: 49%;
 	height: 100%;
@@ -77,6 +110,14 @@ article .photos .img-name {
 }
 /*RWD*/
 @media screen and (max-width:650px) { 
+	.case_title{
+		margin: 0 auto;
+		width: 80%;
+	}
+	.case_title .case_name{
+		width: 100%;
+		margin: 0.3%;
+	}
   	article .cases{
     	width: 80%;
     }

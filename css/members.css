@@ -1,0 +1,112 @@
+body{
+	padding: 0;
+	margin: 0 ;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+/*內文*/
+main{
+	margin: 0 auto;
+	width: 100%;
+	min-height: 600px;
+	background-color: #1F2C3A;
+	color: white;
+	z-index: 1;
+	padding: 44px 0px;
+}
+article{
+	margin: 44px 0px 44px 0px;/*上右下左*/
+	flex-wrap: wrap;
+}
+/*人員詳細介紹*/
+article .cases{
+   	margin: 0 auto;
+   	width: 80%;
+   	display: flex;
+   	flex-wrap: wrap;
+}
+article .photo{
+	margin: 0 auto;
+	width: 40%;
+	display: flex;
+	overflow: hidden;
+}
+article .photo img{
+	height: 100%;
+	width: 100%;
+	border-radius: 60%;
+}
+article .information{
+	margin: 0 auto;
+	width: 50%;
+}
+article .information #frame{
+ 	margin: 50px 40px;
+}
+article .information #frame p{
+ 	font-size: 17px;		
+}
+article .information #frame .principal a{
+  	color: white;
+  	text-decoration: none;
+  	list-style: none;
+}
+article .information #frame .principal a:hover{
+    filter: invert(50%) sepia(80%) saturate(389%) hue-rotate(169deg) brightness(89%) contrast(87%);
+}
+article .information #frame .major ul li{
+  	font-size: 16px;	
+	text-align: left;
+	white-space: nowrap;
+}
+article .information #frame .major ul li a{
+  	text-decoration: none;
+  	color: white;
+}
+article .information #frame .major ul li a:hover{
+    filter: invert(50%) sepia(80%) saturate(389%) hue-rotate(169deg) brightness(89%) contrast(87%);
+}
+/*證照圖片等*/
+article .licenses{
+   	margin: 0 auto;
+   	width: 80%;
+   	display: flex;
+	overflow: hidden;
+   	flex-wrap: wrap;
+	justify-content: space-between;
+}
+article .licenses .license1, article .licenses .license2, article .licenses .license3{
+	margin: 0 auto;
+	width: 33%;
+	display: flex;
+	flex-wrap: wrap;
+}
+article .licenses .img{
+	width: 100%;
+	display: flex;
+}
+article .licenses .img img{
+	width: 100%;
+}
+article .licenses .img-name {
+	margin: 0 auto;
+	display: flex;
+	white-space: nowrap;
+}
+/*RWD*/
+@media screen and (max-width:650px) { 
+  	article .cases{
+    	width: 80%;
+    }
+	article .photo{
+		width: 90%;
+	}
+	article .information{
+		width: 100%;
+	}
+	article .licenses{
+    	width: 80%;
+    }
+	article .license1, .license2, .license3{
+		width: 90%;
+	}
+}

@@ -89,6 +89,22 @@ header{
 	color: #336699;
 	transition: 0.5s;
 }
+header .our_slogan{
+	float: left;
+	display: flex;
+	margin: 0 auto;
+	height: 44px;
+	width: 100%;
+	position: fixed;
+	flex-wrap: wrap;
+}
+header .our_slogan p{
+	font-size: 15px;
+	color: white;
+	white-space: nowrap;
+	margin: 0 auto;
+	padding-top: 11px;
+}
 header .title{
 	float: right;
 	margin-right: 2%;
